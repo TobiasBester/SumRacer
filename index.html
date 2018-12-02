@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Sum Racer</title>
+    </head>
+        <script type="text/javascript" src="./src/pixi.min.js"></script>
+        <link rel="stylesheet" href="./css/styles.css">
+    <body>
+        <div class="header-card">
+            <div class="header-card__level">Level <span id="level">1</span></div>
+            <div class="header-card__title">SUM RACER</div>
+        </div>
+        <div class="control-card" id="control">
+            <div id="winner" class="control-card__win">YOU WON!!!</div>
+            <div id="loser" class="control-card__lose">YOU DID NOT WIN :(</div>
+            <button id="start" class="control-card__button">START</button>
+            <button id="nextlevel" onclick="proceedToNextLevel()" class="control-card__button">START NEXT LEVEL</button>
+            <button id="retry" onclick="repeatCurrentLevel()" class="control-card__button">RETRY LEVEL</button>
+        </div>
+        <div class="sum-card" id="sum">
+            <div class="sum-card__question">
+                <span id="first">1</span> + <span id="second">2</span> =
+            </div>
+            <input type="number" class="sum-card__answer" id="number" autofocus="true">
+            <button class="sum-card__submit" id="submit" onclick="checkAnswer();">Enter</button>
+            <div id="correct" class="sum-card__correct">
+                <h3 style="margin: 25px 10px">CORRECT!</h3>
+            </div>
+            <div id="wrong" class="sum-card__wrong">
+                <h3 style="margin: 25px 10px">WRONG</h3>
+            </div>
+        </div>
+        <script type="text/javascript" src="./src/script.js"></script>
+    </body>
+</html>

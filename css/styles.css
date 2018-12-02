@@ -1,0 +1,100 @@
+.body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+}
+
+.header-card {
+    background-color: aquamarine;
+    width: 900;
+    text-align: center;
+}
+
+.header-card__title {
+    font-size: 200%;
+    padding: 10px;
+}
+
+.header-card__level {
+    font-size: 150%;
+    padding: 5px;
+    float: left;
+}
+
+#level {
+    font-size: 170%;
+    font-weight: 400;
+}
+
+.sum-card {
+    background-color: cadetblue;
+    width: 900px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.sum-card__question {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 300%;
+    font-weight: 500;
+    padding: auto 10px;
+    margin-left: 20px;
+}
+
+.sum-card__answer {
+    padding: auto 10px;
+    margin-left: 20px;
+    border: 2px solid grey;
+    font-size: 300%;
+    width: 30%;
+}
+
+.sum-card__submit {
+    margin-left: 20px;
+    width: 25%;
+    padding: 5px;
+    background-color: yellowgreen;
+    box-shadow: 1px solid grey;
+    font-size: 150%;
+}
+
+.sum-card__correct {
+    display: none;
+    background-color: chartreuse;
+    color: black;
+    padding: auto 20px;
+    margin-left: 10px;
+}
+
+.sum-card__wrong {
+    display: none;
+    background-color: brown;
+    color: white;
+    padding: auto 20px;
+    margin-left: 10px;
+}
+
+.control-card {
+    background-color: white;
+    width: 900px;
+    text-align: center;
+}
+
+.control-card__win {
+    background: green;
+    color: white;
+    font-weight: 500;
+    font-size: 200%;
+    display: none;
+}
+
+.control-card__lose {
+    background: red;
+    color: white;
+    font-size: 200%;
+    display: none;
+}
+
+.control-card__button {
+    font-size: 150%;
+    background-color: coral;
+}
